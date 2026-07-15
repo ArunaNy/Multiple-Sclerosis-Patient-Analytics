@@ -1,0 +1,22 @@
+SELECT
+    ABS(CORR(gender, diagnosis)) AS corr_gender,
+    ABS(CORR(age, diagnosis)) AS corr_age,
+    ABS(CORR(schooling, diagnosis)) AS corr_schooling,
+    ABS(CORR(breastfeeding, diagnosis)) AS corr_breatfeeding, 
+	ABS(CORR(varicella, diagnosis)) AS corr_varicella, 
+	ABS(CORR(initial_symptom, diagnosis)) AS corr_initial_symptom, 
+	ABS(CORR(Mono_or_Polysymptomatic, diagnosis)) AS corr_Mono_or_Polysymptomatic, 
+	ABS(CORR(Oligoclonal_Bands, diagnosis)) AS corr_Oligoclonal_Bands, 
+	ABS(CORR(LLSSEP, diagnosis)) AS corr_LLSSEP,
+	ABS(CORR(ULSSEP, diagnosis)) AS corr_ULSSEP,
+	ABS(CORR(VEP, diagnosis)) AS corr_VEP,
+	ABS(CORR(BAEP, diagnosis)) AS corr_BAEP,
+	ABS(CORR(periventricular_mri, diagnosis)) AS corr_periventricular_mri,
+	ABS(CORR(Cortical_MRI, diagnosis)) AS corr_Cortical_MRI,
+	ABS(CORR(Infratentorial_MRI, diagnosis)) AS corr_Infratentorial_MRI,
+	ABS(CORR(Spinal_Cord_MRI, diagnosis)) AS corr_Spinal_Cord_MRI,
+	ABS(CORR(Initial_EDSS, diagnosis)) AS corr_Initial_EDSS,
+	ABS(CORR(Final_EDSS, diagnosis)) AS corr_Final_EDSS
+	
+FROM ms_data
+
